@@ -30,7 +30,6 @@ import javax.swing.JTextField;
 import javax.swing.JToggleButton;
 import javax.swing.LayoutStyle.ComponentPlacement;
 import javax.swing.ListSelectionModel;
-import javax.swing.SwingConstants;
 import javax.swing.border.EmptyBorder;
 import javax.swing.border.LineBorder;
 import javax.swing.border.TitledBorder;
@@ -153,10 +152,6 @@ public class MainFrame extends JFrame {
 			}
 		});
 		
-		JLabel lblHttpsgithubcomrenanbtm = new JLabel("github.com/renanbtm");
-		lblHttpsgithubcomrenanbtm.setFont(new Font("Tahoma", Font.BOLD, 12));
-		lblHttpsgithubcomrenanbtm.setHorizontalAlignment(SwingConstants.TRAILING);
-		
 		
 		GroupLayout gl_contentPane = new GroupLayout(contentPane);
 		gl_contentPane.setHorizontalGroup(
@@ -170,8 +165,7 @@ public class MainFrame extends JFrame {
 							.addComponent(panel, GroupLayout.PREFERRED_SIZE, 436, GroupLayout.PREFERRED_SIZE))
 						.addGroup(gl_contentPane.createSequentialGroup()
 							.addComponent(btnLoad)
-							.addGap(377)
-							.addComponent(lblHttpsgithubcomrenanbtm, GroupLayout.PREFERRED_SIZE, 254, GroupLayout.PREFERRED_SIZE))
+							.addGap(631))
 						.addGroup(gl_contentPane.createSequentialGroup()
 							.addComponent(btnRemove)
 							.addPreferredGap(ComponentPlacement.RELATED, 614, Short.MAX_VALUE)
@@ -182,9 +176,7 @@ public class MainFrame extends JFrame {
 			gl_contentPane.createParallelGroup(Alignment.TRAILING)
 				.addGroup(gl_contentPane.createSequentialGroup()
 					.addContainerGap()
-					.addGroup(gl_contentPane.createParallelGroup(Alignment.TRAILING)
-						.addComponent(btnLoad)
-						.addComponent(lblHttpsgithubcomrenanbtm))
+					.addComponent(btnLoad)
 					.addGap(20)
 					.addGroup(gl_contentPane.createParallelGroup(Alignment.LEADING)
 						.addComponent(scrollPane, GroupLayout.DEFAULT_SIZE, 307, Short.MAX_VALUE)
